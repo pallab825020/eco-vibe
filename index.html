@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Vibe Creations</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+ <body>
+<div id ="main-content">
+<!-- Header Start -->
+<header>
+<div class="container">
+<div class="logo">
+  <img src="logo.png" alt="Logo">  EcoVibes
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#sustainability">Sustainability</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="order">
+<a href="#products" class="btn">Shop Now</a> 
+ <div class="cart-icon" onclick="openCart()">
+    🛒 <span id="cart-count">0</span>
+   </div>
+</div>
+</div>
+</header>
+<!-- Header End -->
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+ <section class="hero-slider">
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <img src="images/1.png" alt="Eco Decor">
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+        <img src="images/2.png" alt="Handcrafted Decor">
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+        <img src="images/3.png" alt="Sustainable Living">
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide">
+        <img src="images/4.png" alt="Natural Materials">
+    </div>
+    <!-- Slide 5 -->
+    <div class="slide">
+        <img src="images/5.png" alt="Eco Friendly Products">
+    </div>
+    
+    <!-- Dark Overlay -->
+    <div class="slider-overlay"></div>
+
+    <!-- Content Overlay -->
+    <div class="hero-content">
+        <span class="hero-tag">
+            Sustainable • Handmade • Eco-Friendly
+        </span>
+        <h1>
+            Live Green,<br>
+            Live Beautiful
+        </h1>
+        <p>
+            Eco-friendly home décor and lifestyle products
+            crafted with sustainability in mind.
+        </p>
+        <div class="hero-btns">
+            <a href="#products" class="btn">Explore Products</a>
+            <a href="#about" class="btn-outline">Learn More</a>
+        </div>
+    </div>
+    <!-- Navigation Buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+ </section>
+</section>
+
+<div id="features">
+  <div class="features-grid">
+    <div class="feature-item">
+      <span class="feature-icon">🌿</span>
+      <div class="feature-text"><strong>100% Natural</strong>Organic & biodegradable</div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">♻️</span>
+      <div class="feature-text"><strong>Recycled Materials</strong>Zero-waste production</div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🤲</span>
+      <div class="feature-text"><strong>Handcrafted</strong>By local artisans</div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🚚</span>
+      <div class="feature-text"><strong>Free Shipping</strong>On orders above ₹999</div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🌱</span>
+      <div class="feature-text"><strong>Plant a Tree</strong>With every purchase</div>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<section class="about" id="about">
+<div class="container">
+<div class="about-content" data-aos="fade-up">
+<svg class="about-card-leaf" viewBox="0 0 200 280" fill="#2D6A4F" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 10C100 10 20 80 20 160C20 220 55 270 100 270C145 270 180 220 180 160C180 80 100 10 100 10Z"/>
+      </svg>
+
+<div class="fade-up" style="transition-delay:0.15s">
+    <div class="section-eyebrow">About  Us</div><br>
+    <h2 class="section-title"><span>Crafting beauty</span><br><span>from nature's gifts</span></h2>
+    <p class="section-sub">Eco Vibe Creations is a Kolkata-based brand redefining home décor through the lens of sustainability. Every piece we create tells a story — of skilled artisan hands, rescued materials, and a greener tomorrow.</p>
+    <p class="section-sub">Our products are made from recycled paper, reclaimed wood, organic cotton, bamboo, and other natural materials. We partner with local craftspeople who share our ethos and bring generations of skill to every creation.</p>
+    <br><br>
+    <a href="#sustainability" class="btn-primary">Learn About Our Process →</a>
+  </div>
+</div>
+
+ <div class="sustain-image">
+        <div class="cycle-container">
+                <div class="center-leaf"> <img src="logo.png" alt="Logo"></div>
+                <div class="cycle">
+                  <div class="item item1">
+                  <div class="content">
+                  <span class="cycle-icon">🌱</span>
+                  <span class="title">Natural Raw Materials</span>
+                  </div>
+                  </div>
+                  <div class="item item2">
+                  <div class="content">
+                  <span class="cycle-icon">♻️</span>
+                  <span class="title">Reuse & Recycle</span>
+                  </div>
+                  </div>
+                  <div class="item item3">
+                  <div class="content">
+                  <span class="cycle-icon">👐</span>
+                  <span class="title">Responsibly Crafted</span>
+                  </div>
+                  </div>
+                  <div class="item item4">
+                  <div class="content">
+                  <span class="cycle-icon">📦</span>
+                  <span class="title">Sustainable Packaging</span>
+                  </div>
+                  </div>
+                  <div class="item item5">
+                  <div class="content">
+                  <span class="cycle-icon">🏡</span>
+                  <span class="title">Beautiful Spaces</span>
+                  </div>
+                  </div>
+                  <div class="item item6">
+                  <div class="content">
+                  <span class="cycle-icon">🌍</span>
+                  <span class="title">Eco Innovation</span>
+                  </div>
+                  </div>
+                 </div>
+          </div>
+ </div>
+</div>
+</section>
+
+
+<!-- Products -->
+<section class="products" id="products">
+<div class="container">
+<h2 class="section-title">Featured Products</h2>
+
+<div class="product-filter">
+<button class="active" data-filter="all">All</button>
+<button data-filter="handmade">Handmade</button>
+<button data-filter="decor">Decor</button>
+<button data-filter="lifestyle">Lifestyle</button>
+<button data-filter="kitchen">Kitchen</button>
+</div>
+
+
+<div class="product-grid" id="product-list" data-aos="fade-up">
+
+    <!-- All / General Products -->
+    <div class="product-card" data-category="handmade">
+    <img src="images/p2.jpg">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Bamboo Lamp</h3>
+    <h2>Natural Fiber</h2>
+    <p class="price">₹899</p>
+    </div>
+
+    <div class="product-card" data-category="handmade">
+    <img src="images/p0.jpg">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Tumbled Hemp Rug</h3>
+    <h2>8' x 10' Area</h2>
+    <p class="price">₹399</p>
+    </div>
+
+    <div class="product-card" data-category="handmade">
+    <img src="images/p3.jpg">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Bamboo Table Lamp</h3>
+    <h2>Natural Fiber</h2>
+    <p class="price">₹999</p>
+    </div>
+
+    <div class="product-card" data-category="handmade">
+    <img src="images/p5.jpg">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Raw Cork Wall Art</h3>
+    <h2>Renewable Cork</h2>
+    <p class="price">₹699</p>
+    </div>
+
+    <!-- Decor Section -->
+    <div class="product-card" data-category="decor">
+    <img src="images/D1.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Macrame Wall Hanging</h3>
+    <h2>Made from cotton macrame cord.</h2>
+    <p class="price">₹1,200</p>
+    </div>
+
+    <div class="product-card" data-category="decor">
+    <img src="images/D2.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Bamboo Lantern</h3>
+    <h2>Made from jute rope and bamboo.</h2>
+    <p class="price">₹1,800</p>
+    </div>
+
+    <div class="product-card" data-category="decor">
+    <img src="images/D3.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Jute Planter</h3>
+    <h2>Made from jute rope.</h2>
+    <p class="price">₹600</p>
+    </div>
+
+    <div class="product-card" data-category="decor">
+    <img src="images/D4.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Bamboo Wind Chime</h3>
+    <h2>Made from bamboo tubes.</h2>
+    <p class="price">₹1,100</p>
+    </div>
+
+    <!-- Lifestyle Section -->
+    <div class="product-card" data-category="lifestyle">
+    <img src="images/l1.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Jute Tote Bag</h3>
+    <h2>Made from jute fabric.</h2>
+    <p class="price">₹1,499</p>
+    </div>
+
+    <div class="product-card" data-category="lifestyle">
+    <img src="images/l2.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Handmade Journal</h3>
+    <h2>Made from handmade paper.</h2>
+    <p class="price">₹799</p>
+    </div>
+
+    <div class="product-card" data-category="lifestyle">
+    <img src="images/l3.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Natural Soap</h3>
+    <h2>Made from essential oils.</h2>
+    <p class="price">₹199</p>
+    </div>
+
+    <div class="product-card" data-category="lifestyle">
+    <img src="images/l4.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Handwoven Scarf</h3>
+    <h2>Made from khadi yarn.</h2>
+    <p class="price">₹499</p>
+    </div>
+
+    <!-- Kitchen Section -->
+    <div class="product-card" data-category="kitchen">
+    <img src="images/k1.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Bamboo Utensil Set</h3>
+    <h2>Made from natural bamboo.</h2>
+    <p class="price">₹899</p>
+    </div>
+
+    <div class="product-card" data-category="kitchen">
+    <img src="images/k2.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Wooden Coaster Set</h3>
+    <h2>Made from teak wood.</h2>
+    <p class="price">₹1,999</p>
+    </div>
+
+    <div class="product-card" data-category="kitchen">
+    <img src="images/k3.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Handmade Fruit Basket</h3>
+    <h2>Made from cane fibers.</h2>
+    <p class="price">₹799</p>
+    </div>
+
+    <div class="product-card" data-category="kitchen">
+    <img src="images/k4.png">
+    <button class="cart-btn">Add to cart 🛒</button>
+    <h3>Wooden Spice Jar</h3>
+    <h2>Made from solid wood.</h2>
+    <p class="price">₹399</p>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- Pop up -->
+<div class="popup-overlay" id="popup">
+    <div class="popup">
+        <span class="close-btn" onclick="closePopup()">✖</span>
+        <img id="popup-img" src="">
+        <div class="popup-content">
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+			<div class="popup-price" id="popup-price"></div>
+		<div class="qty-box">
+               <button onclick="decreaseQty()">−</button>
+                <span id="qty">1</span>
+                <button onclick="increaseQty()">+</button>
+        </div>
+            <button onclick="addToCart()">🛒 Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Sustainability -->
+<section class="sustainability" id="sustainability">
+<h2 class="section-title">Our Sustainable Journey</h2><br><br>
+
+<div class="journey-steps" data-aos="zoom-in">
+<div class="step">
+<div class="icon">🌱</div>
+<h5>Natural Raw Materials</h5>
+</div>
+<div class="step">
+<div class="icon">♻</div>
+<h5>Reuse & Recycle</h5>
+</div>
+<div class="step">
+<div class="icon">🤲</div>
+<h5>Responsibly Crafted</h5>
+</div>
+<div class="step">
+<div class="icon">📦</div>
+<h5>Sustainable Packaging</h5>
+</div>
+<div class="step">
+<div class="icon">🏡</div>
+<h5>Better Living</h5>
+</div>
+</div><br><br><br>
+
+<div class="container">
+<div class="left">
+<section class="report-section">
+<h2 class="report-title">Sustainability Impact Report</h2>
+<div class="chart-wrapper">
+    <div class="donut-chart">
+        <svg width="320" height="320" viewBox="0 0 220 220">
+            <circle class="bg" cx="110" cy="110" r="80"></circle>
+            <circle class="seg1" cx="110" cy="110" r="80"></circle>
+            <circle class="seg2" cx="110" cy="110" r="80"></circle>
+            <circle class="seg3" cx="110" cy="110" r="80"></circle>
+            <circle class="seg4" cx="110" cy="110" r="80"></circle>
+        </svg>
+        <div class="chart-center">
+            <h2 id="counter">0%</h2>
+            <p>Sustainability<br>Impact</p>
+        </div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <span class="color c1"></span>Recycled Materials<strong>40%</strong>
+        </div>
+        <div class="legend-item">
+            <span class="color c2"></span>Eco Production<strong>25%</strong>
+        </div>
+        <div class="legend-item">
+            <span class="color c3"></span>Plastic-Free Pack<strong>20%</strong>
+        </div>
+        <div class="legend-item">
+            <span class="color c4"></span>Carbon Reduction<strong>15%</strong>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+
+<div class="right">
+<h2 data-aos="zoom-in">Our Promise</h2>
+<div class="eco-frame" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">
+    To people. To planet. To a better tomorrow.
+</div>
+<ul data-aos="fade-left">
+    <li>100% Recycled Materials</li>
+    <li>Eco-Friendly Production</li>
+    <li>Plastic-Free Packaging</li>
+    <li>Reduced Carbon Footprint</li>
+</ul>
+
+<div class="counter-box" data-aos="zoom-in">
+<div>
+<h3 class="counter" data-count="5000">17,938,874</h3>
+<p>Happy Customers</p>
+</div>
+<div>
+<h3 class="counter" data-count="1200">22,86,914</h3>
+<p>Trees Saved</p>
+</div>
+<div>
+<h3 class="counter" data-count="100">7,66,974</h3>
+<p>Eco Materials</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Blog -->
+<section class="blog" id="blog">
+<div class="container">
+<h2>Latest Blogs</h2>
+<div class="blog-grid" data-aos="fade-up">
+	<div class="blog-card">
+    <img src="images/blog1.png" alt="Blog Image">
+	<div class="blog-body">
+    <div class="blog-tag">Home Decor</div>
+    <h3>5 ways to make your living room feel like a forest retreat</h3>
+    <p>Bring nature indoors with these simple, affordable décor swaps using organic textures and earthy tones.</p>
+	<a href="#" class="blog-read-more">Read more →</a>
+    </div>
+	</div>
+
+<div class="blog-card1">
+      <img src="images/blog2.png" alt="Blog Image">
+      <div class="blog-body">
+        <div class="blog-tag">Sustainability</div>
+        <h3>Why switching to bamboo products is one of the best things you can do</h3>
+        <p>Bamboo grows faster than any wood, sequesters CO₂, and needs no pesticides. Here's why it's our hero material.</p>
+        <a href="#" class="blog-read-more">Read more →</a>
+      </div>
+    </div>
+
+ <div class="blog-card2">
+      <img src="images/blog3.png" alt="Blog Image">
+      <div class="blog-body">
+        <div class="blog-tag">Lifestyle</div>
+        <h3>Zero-waste kitchen: a beginner's guide for Indian households</h3>
+        <p>From cloth bags to composting, here's a practical step-by-step guide to reducing kitchen waste without disrupting your routine.</p>
+        <a href="#" class="blog-read-more">Read more →</a>
+      </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+<div class="container">
+<h2>Contact</h2><br>
+<div class="contact-wrapper" data-aos="fade-up">
+<div class="map">
+<iframe src="https://www.google.com/maps?q=Kolkata&output=embed"></iframe><br>
+<div class="fade-up">
+    <h2 class="contact-info">We'd love to<br>hear from you</h2>
+    <p>Have a question, a custom order request, or just want to say hello? Reach out — our team responds within 24 hours.</p>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📧</div>
+      <div class="contact-detail-text">
+        <strong>Email Us</strong>
+        <span>hello@ecovibecreations.in</span>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📞</div>
+      <div class="contact-detail-text">
+        <strong>Call Us</strong>
+        <span>+91 98300 45678</span>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📍</div>
+      <div class="contact-detail-text">
+        <strong>Visit Our Store</strong>
+        <span>42 Green Lane, Salt Lake, Kolkata – 700091</span>
+      </div>
+    </div>
+
+    <div class="socials">
+      <a href="#" class="social-btn" aria-label="Instagram">𝕀</a>
+      <a href="#" class="social-btn" aria-label="Facebook">𝔽</a>
+      <a href="#" class="social-btn" aria-label="Pinterest">𝕻</a>
+      <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+    </div>
+  <svg class="about-card-leaf2" viewBox="0 0 200 280" fill="#2D6A4F" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 10C100 10 20 80 20 160C20 220 55 270 100 270C145 270 180 220 180 160C180 80 100 10 100 10Z"/>
+      </svg>
+  </div>   
+</div>
+
+<div class="contact-form">
+<h2>Get in Touch</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="tel" placeholder="Phone Number">
+<select>
+        <option hidden>Select an option</option>
+        <option>Product Enquiry</option>
+        <option>Custom Order</option>
+        <option>Bulk / Corporate Order</option>
+        <option>Feedback</option>
+        <option>Other</option>
+</select>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+ <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo2"><img src="logo.png" alt="Logo"></a>
+      <p>Beautiful, sustainable home décor and <br>lifestyle products
+	    crafted with love,<br> from the earth and for the earth.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul class="footer-links">
+        <li><a href="#products">Home Décor</a></li>
+        <li><a href="#products">Lighting</a></li>
+        <li><a href="#products">Kitchen</a></li>
+        <li><a href="#products">Storage</a></li>
+        <li><a href="#products">Bedroom</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul class="footer-links">
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Eco Vibe Creations. All rights reserved.</span>
+    <span>Made with 🌿 in Kolkata</span>
+  </div>
+<h3>Eco Vibe Creations</h3>
+<p>Live Green, Live Beautiful</p>
+</footer>
+
+<!-- CART SLIDER -->
+<div class="cart-slider" id="cart-slider">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <span onclick="closeCart()">✖</span>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+        <h4>Total: ₹<span id="cart-total">0</span></h4>
+        <button onclick="checkout()">Check Out</button>
+    </div>
+</div>
+
+<div id="orderFormPopup">
+    <div class="order-box">
+        <h2>Place Your Order</h2>
+          <input type="text" id="cust-name" placeholder="Full Name" required>
+        <input type="tel" id="cust-phone" placeholder="Phone Number" required>
+		<div class="amount-summary">
+            <p>Cart Total: <span id="popup-cart-total">₹0.00</span></p>
+            <p>Delivery Charge: <span>₹50.00</span></p>
+            <hr>
+            <p class="final-payable">Total Payable: <span id="popup-final-total">₹50.00</span></p>
+        </div>
+        <textarea id="cust-address" placeholder="Delivery Address" required></textarea>
+        
+        <div class="btn-group">
+            <button onclick="confirmOrder()" class="btn-confirm">Place Order</button>
+            <button onclick="closeOrderForm()" class="btn-close">Close</button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+// POPUP LOGIC
+const products = document.querySelectorAll(".product-card");
+const popup = document.getElementById("popup");
+const mainContent = document.getElementById("main-content");
+
+    products.forEach(card => {
+    card.addEventListener("click", (e) => {
+        
+        if(e.target.classList.contains('cart-btn')) return;
+
+        const img = card.querySelector("img").src;
+        const title = card.querySelector("h3").innerText;
+        const desc = card.querySelector("h2") ? card.querySelector("h2").innerText : "";
+		const price = card.querySelector(".price").innerText;
+
+        document.getElementById("popup-img").src = img;
+        document.getElementById("popup-title").innerText = title;
+        document.getElementById("popup-desc").innerText = desc;
+		document.getElementById("popup-price").innerText = price;
+
+        popup.style.display = "flex";
+        mainContent.classList.add("blur");
+    });
+});
+
+function closePopup() {
+    popup.style.display = "none";
+    mainContent.classList.remove("blur");
+}
+
+let quantity = 1;
+let cartCount = 0;
+
+function increaseQty() {
+    quantity++;
+    document.getElementById("qty").innerText = quantity;
+}
+
+function decreaseQty() {
+    if(quantity > 1){
+        quantity--;
+        document.getElementById("qty").innerText = quantity;
+    }
+}
+
+let cart = [];
+function addToCart() {
+    const title = document.getElementById("popup-title").innerText;
+    const price = document.getElementById("popup-price").innerText.replace("₹", "").replace(",","");
+    const img = document.getElementById("popup-img").src;
+
+    const item = {
+        title,
+        price: parseFloat(price),
+        img,
+        qty: quantity
+    };
+
+    const existing = cart.find(p => p.title === title);
+    if(existing){
+        existing.qty += quantity;
+    } else {
+        cart.push(item);
+    }
+
+    updateCartUI();
+    cartCount += quantity;
+    document.getElementById("cart-count").innerText = cartCount;
+
+    quantity = 1;
+    document.getElementById("qty").innerText = quantity;
+
+    closePopup();
+    alert("✅ Added to cart!");
+}
+
+function updateCartUI() {
+    const container = document.getElementById("cart-items");
+    const totalEl = document.getElementById("cart-total");
+    container.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        total += item.price * item.qty;
+        container.innerHTML += `
+    <div class="cart-item" style="position: relative; border-bottom: 1px solid #eee; padding-bottom: 10px; display: flex; align-items: center; gap: 15px;">
+        <img src="${item.img}" style="width: 70px; border-radius: 10px;">
+        <div style="flex: 1;">
+            <h4 style="font-size: 14px; margin-bottom: 5px;">${item.title}</h4>
+            <div class="cart-qty">
+                <button onclick="decreaseItem(${index})">−</button>
+                <span>${item.qty}</span>
+                <button onclick="increaseItem(${index})">+</button>
+            </div>
+            <p style="font-size: 13px; opacity: 0.7; margin-top: 5px;">₹${item.price} x ${item.qty}</p>
+        </div>
+        <button onclick="deleteItem(${index})" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: #ff4d4d; border: none; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; cursor: pointer; box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3); transition: 0.2s;">✕</button>
+    </div>`;
+    });
+    totalEl.innerText = total.toFixed(2);
+}
+
+function increaseItem(index) {
+    cart[index].qty++;
+    cartCount++;
+    updateCartUI();
+    document.getElementById("cart-count").innerText = cartCount;
+}
+
+function decreaseItem(index) {
+    if(cart[index].qty > 1){
+        cart[index].qty--;
+        cartCount--;
+    } else {
+        cartCount -= cart[index].qty;
+        cart.splice(index, 1);
+    }
+    updateCartUI();
+    document.getElementById("cart-count").innerText = cartCount;
+}
+
+function deleteItem(index) {
+    cartCount -= cart[index].qty; 
+    cart.splice(index, 1);        
+    updateCartUI();              
+    document.getElementById("cart-count").innerText = cartCount; 
+}    
+</script>
+
+<script>
+function openCart() {
+    document.getElementById("cart-slider").classList.add("active");
+}
+function closeCart() {
+    document.getElementById("cart-slider").classList.remove("active");
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: false, mirror: true });
+</script>
+
+<script>
+let count = 0;
+const target = 100;
+const counter = document.getElementById("counter");
+let started = false;
+
+function startCounter() {
+    if (started) return;
+    started = true;
+    const interval = setInterval(() => {
+        count++;
+        counter.innerText = count + "%";
+        if (count >= target) { clearInterval(interval); }
+    }, 20);
+}
+
+const section = document.querySelector(".report-section");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) { startCounter(); }
+    });
+}, { threshold: 0.5 });
+observer.observe(section);
+</script>
+
+<script>
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+let current = 0;
+
+function showSlide(index){
+    slides.forEach(slide=>{ slide.classList.remove("active"); });
+    slides[index].classList.add("active");
+}
+function nextSlide(){
+    current = (current + 1) % slides.length;
+    showSlide(current);
+}
+function prevSlide(){
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+}
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+setInterval(nextSlide, 5000);
+</script>
+
+
+<script>
+const filterButtons = document.querySelectorAll(".product-filter button");
+const allProductCards = document.querySelectorAll("#product-list .product-card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filterValue = button.dataset.filter;
+
+        allProductCards.forEach(card => {
+            if (filterValue === "all") {
+                card.style.display = "block"; 
+            } else {
+                
+                if (card.dataset.category === filterValue) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        });
+    });
+});
+</script>
+<script>
+
+function checkout() {
+    
+    const cartTotal = parseFloat(document.getElementById("cart-total").innerText) || 0;
+
+    if (cartTotal > 0) {
+        const deliveryCharge = 50;
+        const totalPayable = cartTotal + deliveryCharge;
+
+       
+        document.getElementById("popup-cart-total").innerText = "₹" + cartTotal.toFixed(2);
+        document.getElementById("popup-final-total").innerText = "₹" + totalPayable.toFixed(2);
+
+        
+        document.getElementById("orderFormPopup").style.display = "flex";
+    } else {
+        alert("⚠️ Your cart is empty.");
+    }
+}
+
+function closeOrderForm() {
+    document.getElementById("orderFormPopup").style.display = "none";
+}
+function confirmOrder() {
+    
+    const name = document.getElementById("cust-name").value.trim();
+    const phone = document.getElementById("cust-phone").value.trim();
+    const address = document.getElementById("cust-address").value.trim();
+
+    
+    if (name === "" || phone === "" || address === "") {
+        alert("⚠️ please fill out all fields (Name, Phone number, and Delivery Address).");
+        return; 
+    }
+
+    
+    alert("✅ Order Successful!\nThank you " + name + ", your order has been placed.");
+
+    
+    cart = [];
+    cartCount = 0;
+
+    if (typeof updateCartUI === "function") {
+        updateCartUI();
+    }
+
+    document.getElementById("cart-count").innerText = "0";
+    
+    
+    document.getElementById("cust-name").value = "";
+    document.getElementById("cust-phone").value = "";
+    document.getElementById("cust-address").value = "";
+
+    closeOrderForm();
+    if (typeof closeCart === "function") {
+        closeCart();
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>
