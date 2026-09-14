@@ -16,8 +16,11 @@
 <!-- Header Start -->
 <header>
 <div class="container">
+<div class="logo-group">
+<div class="menu-btn" id="menuBtn">☰</div>
 <div class="logo">
   <img src="logo.png" alt="Logo">  EcoVibes
+</div>
 </div>
 
 <nav>
@@ -770,6 +773,25 @@ function deleteItem(index) {
     updateCartUI();              
     document.getElementById("cart-count").innerText = cartCount; 
 }    
+</script>
+
+<script>
+// MOBILE MENU TOGGLE
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.querySelector("header nav");
+
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    menuBtn.innerHTML = navMenu.classList.contains("active") ? "✖" : "☰";
+});
+
+// close menu when a link is clicked (mobile)
+navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuBtn.innerHTML = "☰";
+    });
+});
 </script>
 
 <script>
